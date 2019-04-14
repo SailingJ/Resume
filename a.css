@@ -5,7 +5,7 @@
 }
 
 body{
-    background: black;
+    background:#b7b7b7;
     margin: 0px;
 }
 .topNavBar .logo{
@@ -15,15 +15,21 @@ body{
     padding: 3px 16px 4px 16px;
 
 }
+.layout-topNavBar{
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+}
 .topNavBar .logo .RS{
     color: #e6686a;
 }
 .topNavBar .logo .card{
-    margin-left: 4px;
+    margin-left: 10px;
     color:#9a9da2;
 }
 .topNavBar{
-    padding-top: 22px;
+    padding-top: 20px;
     padding-bottom: 22px;
 }
 .topNavBar nav{
@@ -42,7 +48,7 @@ body{
 
 .topNavBar nav>ul>li {
     float:left; 
-    margin:0px 17px 0px 17px;
+    margin:0px 15px 0px 15px;
     font-weight: bold;
 }
 
@@ -58,6 +64,100 @@ body{
 .topNavBar nav>ul>li>a:hover{
     border-bottom: 3px solid #e06567;
 }
-h1{
-    color: azure
+
+.banner{
+    background-image:url(./img/rs-cover.jpg);
+    height: 515px;
+    background-position: center center;
+}
+.banner-mask{
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+.namecard{
+    margin-left: auto   ;
+    margin-right: auto;
+    max-width: 950px;
+    background: white;
+}
+.namecard .pictureANDtext{
+    max-width: 950px;
+    padding: 50px
+}
+.namecard .profile{
+    margin-left: 65px
+}
+.namecard .头像{
+    width: 300px;
+    height: 350px;
+    float: left;
+}
+.namecard .text{
+    float: left;
+}
+.namecard .text .welcome{
+    background-color: #e6686a;
+    padding: 4px 16px;
+    display: inline-block;
+    position: relative;
+}
+.namecard .text .triangle{
+    border: 5px solid #e6686a;
+    width: 0px;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    margin-left: 5px;
+    position: absolute;
+}
+.namecard .text .profile{
+    width: 470px;
+}
+.namecard .text .profile h1{
+    color: black
+}
+.namecard .text .profile hr{
+    height: 0px;
+    border: none;
+    border-top:  1px solid #DEDEDE;
+}
+body >main .text .profile dl >dt{
+    display: inline-block;
+    width: 30%;
+    font-weight: bold;
+    color: black;
+    padding: 5px 0px;
+}
+body >main .text .profile dl >dd{
+    display: inline-block;
+    width: 70%;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+main .namecard footer{
+    background: #e6686a;
+}
+.namecard .media{
+    text-align: center;
+}
+.namecard .media >a{
+    display: inline-block;
+    border-radius: 50%;
+    width: 40px;
+    height: 30px;
+    padding: 5px 0px;
+    margin: 15px 15px;
+}
+.namecard .media >a:hover{
+    background: #cf5d5f;
+}
+
+
+.namecard svg{
+    width: 30px;
+    height: 30px;
+    fill: white;
+    vertical-align: top;
 }
