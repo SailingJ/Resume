@@ -220,6 +220,7 @@ body >section .skills >ol{
     padding-inline-start: 0px;
     padding: 42px 50px 10px 50px;
     background: white;
+    margin-top: 40px;
 }
 
 body >section .skills >h2,
@@ -228,6 +229,8 @@ body >section .portfolio >h2{
     font-size: 34px;
     line-height: 1.2;
     font-weight: 600;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
 }
 body >section .skills >ol >li{
     width: 48%;
@@ -254,23 +257,84 @@ body >section .skills >ol .progressBar .progress5,
 body >section .skills >ol .progressBar .progress6{
     background: #e6686a;
     height: 5px;
-    width: 70%;
     border-radius: 2px;
 }
 
 body >section .portfolio{
     text-align: center;
+    margin-bottom: 100px;
+    margin-left: auto   ;
+    margin-right: auto;
+    max-width: 950px;
+}
+body >section .portfolioNav{
+    display: inline-block;
 }
 
 body >section .portfolioNav >ol{
-   border: 1px solid red;
-   width: 310px;
-   margin-left: auto;
-   margin-right: auto;
+   margin-left: 0px auto;
+   display: inline-block;
+   vertical-align: top;
+   margin-block-end: 0px;
+   margin-block-start: 0px;
+   padding-inline-start: 0px;
+   margin-top: 35px;
+   
 }
 
 body >section .portfolioNav >ol >li{
-    border: 1px solid red;
     float: left;
+    margin: 0 0 0 20px;
+    cursor: pointer;
 }
 
+body >section .portfolioNav >ol >li:nth-child(1){
+    margin-left: 0;
+}
+body >section .portfolioNav .Bar{
+    border: 1px solid green;
+    height: 5px;
+    margin: 10px 0px;
+    border-radius: 2px;
+}
+
+body >section .portfolioNav .portfolioBar-inner{
+    height: 5px;
+    background: red;
+    border-radius: 2px;
+    transition:0.3s;
+}
+body >section .portfolioNav .Bar.status1 .portfolioBar-inner  {
+    width: 35px;
+    margin-left:0px;
+}
+
+body >section .portfolioNav .Bar.status2 .portfolioBar-inner {
+    width: 45px;
+    margin-left:50px;
+}
+
+body >section .portfolioNav .Bar.status3 .portfolioBar-inner {
+    width: 101px;
+    margin-left:100px;
+}
+
+section .portfolio .works{
+    position: relative;
+    height: 576px;
+}
+section .portfolio .works > .big{
+    position: absolute;
+}
+
+section .portfolio .works > .small1{
+    position: absolute;
+    left: 654px;
+    top: 0px;
+}
+
+section .portfolio .works > .small2{
+    position: absolute;
+    left: 654px;
+    top: 298px;
+}

@@ -51,7 +51,7 @@
             <hr>
             <dl>
               <dt>年龄</dt><dd>18</dd>
-              <dt>所在城市</dt><dd>阿瓦隆</dd>
+              <dt>所在城市</dt><dd>广州</dd>
               <dt>邮箱</dt><dd>443812174@qq.com</dd>
               <dt>手机</dt><dd>15915800486</dd>
             </dl>
@@ -92,37 +92,37 @@
         <li>
           <h3>HTML 5 & CSS3</h3>
           <div class="progressBar">
-            <div class="progress1"></div>
+            <div class="progress1" style="width: 50%"></div>
           </div>
         </li>
         <li>
             <h3>HTML 5 & CSS3</h3>
             <div class="progressBar">
-              <div class="progress2"></div>
+              <div class="progress2" style="width: 60%"></div>
             </div>
           </li>
           <li>
               <h3>HTML 5 & CSS3</h3>
               <div class="progressBar">
-                <div class="progress3"></div>
+                <div class="progress3" style="width: 70%"></div>
               </div>
             </li>
             <li>
                 <h3>HTML 5 & CSS3</h3>
                 <div class="progressBar">
-                  <div class="progress4"></div>
+                  <div class="progress4" style="width: 80%"></div>
                 </div>
               </li>
               <li>
                   <h3>HTML 5 & CSS3</h3>
                   <div class="progressBar">
-                    <div class="progress5"></div>
+                    <div class="progress5" style="width: 60%"></div>
                   </div>
                 </li>
                 <li>
                     <h3>HTML 5 & CSS3</h3>
                     <div class="progressBar">
-                      <div class="progress6"></div>
+                      <div class="progress6" style="width: 70%"></div>
                     </div>
                   </li>
         
@@ -132,11 +132,36 @@
       <h2>作品集</h2>
       <nav class="portfolioNav">
         <ol class="clearfix">
-          <li>所有</li>
-          <li>框架</li>
-          <li>原生JS&amp;CSS</li>
+          <li id="portfolioAll">所有</li>
+          <li id="portfolioFramework">框架</li>
+          <li id="portfolioVallina">原生JS&amp;CSS</li>
         </ol>
+        <div id="portfolioBar" class="Bar status1">
+          <div class="portfolioBar-inner"></div>
+        </div>
       </nav>
+    <script>
+      portfolioAll.onclick=function(){
+        portfolioBar.className="Bar status1"
+      }
+      portfolioFramework.onclick=function(){
+        portfolioBar.className="Bar status2"
+      }
+      portfolioVallina.onclick=function(){
+        portfolioBar.className="Bar status3"
+      }
+    </script>
+      <div class="works">
+        <div class="big">
+          <img src="./img/big.jpg" alt="作品1">
+        </div>
+        <div class="small1">
+          <img src="./img/small1.jpg" alt="作品2">
+        </div>
+        <div class="small2">
+          <img src="./img/small2.jpg" alt="作品3">
+        </div>
+      </div>
     </div>
   </section>
 </body>
