@@ -14,8 +14,8 @@
 
 <body>
     
-  <div class="layout-topNavBar">
-    <div class="topNavBar clearfix" >
+  <div class="topNavBarLayout">
+    <div id="topNavBar" class="topNavBar clearfix" >
       <a class="logo" href="#" alt="logo">
         <span class="RS">RS</span><span class="card">card</span>
       </a>
@@ -150,6 +150,13 @@
       portfolioVallina.onclick=function(){
         portfolioBar.className="Bar status3"
       }
+      //滚动 导航栏动画
+      window.onscroll = function(){
+        console.log('滚了' + window.scrollY)
+        if(window.scrollY>0){topNavBar.classList.add('Scroll')
+        }else{topNavBar.classList.remove('Scroll')
+        }
+      }
     </script>
       <div class="works">
         <div class="big">
@@ -162,6 +169,6 @@
           <img src="./img/small2.jpg" alt="作品3">
         </div>
       </div>
-    </div>
+      
   </section>
 </body>
