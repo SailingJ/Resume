@@ -160,7 +160,7 @@
       }
       //滚动 导航栏动画
       window.onscroll = function(){
-        console.log('滚了' + window.scrollY)
+        //console.log('滚了' + window.scrollY)
         if(window.scrollY>0){topNavBar.classList.add('Scroll')
         }else{topNavBar.classList.remove('Scroll')
         }
@@ -168,7 +168,19 @@
       // 监听导航栏标签
       
       let aTags = document.getElementsByClassName('menuTigger')
-      console.log(aTags)
+      for(let i=0;i<aTags.length;i++){
+        aTags[i].onmouseenter =function(x) {
+         let a = x.currentTarget
+         let brother = x.currentTarget
+         while(brother.nodeType === 3){
+           brother = brother.nextSibling
+         }
+         console.log(brother.text)         
+        }
+        aTags[i].onmouseleave =function() {
+          console.log('mouseleave')
+        }
+      }
 
     </script>
       <div class="works">
