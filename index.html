@@ -175,7 +175,7 @@
          while(brother.nodeType === 3){
            brother = brother.nextSibling
          }
-         console.log(brother.text)         
+          brother.classList.addClass('active')  
         }
         aTags[i].onmouseleave =function() {
           console.log('mouseleave')
