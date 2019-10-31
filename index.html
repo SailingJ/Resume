@@ -174,24 +174,10 @@
       let liTags = document.getElementsByClassName('menuTigger')
       for(let i=0;i<liTags.length;i++){
         liTags[i].onmouseenter =function(x) {
-         let li = x.currentTarget
-         let child = li.childNodes[0]
-         while(child.tagName !== 'UL'){
-          child = child.nextSibling
-         }
-         console.log(child)
-          child.classList.add('active')
+          x.currentTarget.classList.add('active')
         }
         liTags[i].onmouseleave =function(x) {
-         let li = x.currentTarget
-         let child = li.childNodes[0]
-         while(child.tagName !== 'UL'){
-          child = child.nextSibling
-         }
-         console.log(child)
-          child.classList.remove('active')
-          
-          
+          x.currentTarget.classList.remove('active')    
         }
       }
 
