@@ -58,8 +58,8 @@
           <div class="profile">
             <span class="welcome">hello</span>
             <div class="triangle"></div>
-            <h1>简焯毅</h1>
-            <p>未来前端工程师</p>
+            <h1>XXX</h1>
+            <p>毕业作业</p>
             <hr>
             <dl>
               <dt>年龄</dt><dd>18</dd>
@@ -119,19 +119,19 @@
                 <div class="progress3" style="width: 70%"></div>
               </div>
             </li>
-            <li>
+          <li>
                 <h3>HTML 5 & CSS3</h3>
                 <div class="progressBar">
                   <div class="progress4" style="width: 80%"></div>
                 </div>
               </li>
-              <li>
+            <li>
                   <h3>HTML 5 & CSS3</h3>
                   <div class="progressBar">
                     <div class="progress5" style="width: 60%"></div>
                   </div>
                 </li>
-                <li>
+              <li>
                     <h3>HTML 5 & CSS3</h3>
                     <div class="progressBar">
                       <div class="progress6" style="width: 70%"></div>
@@ -191,7 +191,24 @@
           let element = document.querySelector(href) // 新建一个对象element 内容是 href 为选择器 选择的文档
           let rect = element.getBoundingClientRect() //通过bugger 访问内部元素 再通过getB 获取top信息 左上角正方形+右下角正方形定位
           let top = element.offsetTop //新建一个top对象，获取element里面的top 其中（如果top随滚动的变化而变化，offsetTop则是绝对位置，兼容IE）
-          window.scrollTo(0,top - 70)
+          
+          let n = 25
+          let duration = 500 / n
+          let currentTop = window.scrollY
+          let targetTop = top - 70
+          let distance = (targetTop - currentTop)/n
+          let i = 0
+          console.log(distance)
+          console.log(targetTop)
+          console.log(currentTop)
+          setInterval(()=> {
+            if(i===n){ window.clearInterval(id)
+             return
+            }
+            i = i + 1
+            window.scrollTo(0,currentTop + distance * i)
+          },duration)
+          
         }
       }
 
